@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_cepheus.mk
+    $(LOCAL_DIR)/tequila_cepheus.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_cepheus-user \
-    lineage_cepheus-userdebug \
-    lineage_cepheus-eng
+    tequila_cepheus-user \
+    tequila_cepheus-userdebug \
+    tequila_cepheus-eng
