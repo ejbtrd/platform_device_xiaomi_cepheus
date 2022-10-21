@@ -21,22 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common tequila stuff.
+$(call inherit-product, vendor/tequila/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_cepheus
+PRODUCT_NAME := tequila_cepheus
 PRODUCT_DEVICE := cepheus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Recovery
-TARGET_USES_AOSP_RECOVERY := true
 
 # Include firmware
 $(call inherit-product, vendor/xiaomi-firmware/cepheus/firmware.mk)
